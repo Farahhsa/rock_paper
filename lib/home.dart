@@ -84,12 +84,12 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             spacing,
             ElevatedButton(
-              style: ButtonStyle(
-                  backgroundColor: MaterialStatePropertyAll(Colors.orange)),
               onPressed: () {
                 play();
               },
               child: Text("Play"),
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.orange, onPrimary: Colors.white),
             ),
             Text(result),
           ],
